@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS my_coupon default charset utf8 COLLATE utf8_general_ci;
+
+create table my_table (
+name varchar(50) not null default '',
+url varchar(2000) default '',
+discountDesc varchar(100) default '',
+couponUrl varchar(2000)  default '',
+price int(6) not null default 0,
+id int not null primary key auto_increment,
+date Date,
+goodsId varchar(8) not null, 
+monthlySales int(8) not null default 0
+) ENGINE=MyISAM default charset utf8;
